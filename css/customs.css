@@ -1,0 +1,24 @@
+.primary-bg-color {
+	background-color: #6A040F !important;
+}
+
+#logo-mb {
+	/*width: 100px;*/
+	
+}
+
+h1 {
+	color: #6A040F;
+	/*color: white;*/
+	font-weight: bold ;
+}
+
+#mainNav.navbar-shrink {
+	background-color: white;
+	/*background-color: #6A040F !important;*/
+}
+
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+	color:  #6A040F !important;
+}
