@@ -1,9 +1,22 @@
+
+/*Color Management*/
+
 .primary-bg-color {
 	background-color: #6A040F !important;
 }
 
+.primary-footer-color {
+	background-color: #9E111F !important;
+}
+
+.secondary-bg-color {
+	background-color: #B80719 ! important;
+}
+
+
+
 #logo-mb {
-	/*width: 100px;*/
+	
 	
 }
 
@@ -21,4 +34,39 @@ h1 {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
 	color:  #6A040F !important;
+}
+
+#mainNav {
+	background-color: rgb(255, 255, 255, 0.5);
+}
+
+/* --- Contact Slider --- */
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    float: right;
+    clear: both;
+    z-index: 9999 !important;
+	position: fixed;
+	top: 350px;
+    right: 0;
+}
+
+
+
+#slide {
+    position: absolute;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: 1s;
+}
+
+.wrapper:hover #slide {
+    transition: 1s;
+    right: 0;
 }
