@@ -20,6 +20,11 @@
 	
 }
 
+.shadow {
+	text-shadow: 0 0 5px black;
+}
+
+
 h1 {
 	color: #6A040F;
 	/*color: white;*/
@@ -37,7 +42,8 @@ h1 {
 }
 
 #mainNav {
-	background-color: rgb(255, 255, 255, 0.5);
+	background-color: rgb(255, 255, 255, 0.7);
+	transition: 0.5s;
 }
 
 /* --- Contact Slider --- */
@@ -80,4 +86,17 @@ h1 {
 
 .slider-tel {
 	display: inline;
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 992px) {
+  
 }
