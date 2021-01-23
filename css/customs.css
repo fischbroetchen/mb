@@ -45,28 +45,37 @@ h1 {
 .wrapper {
     position: relative;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 75px;
     float: right;
-    clear: both;
+
     z-index: 9999 !important;
-	position: fixed;
-	top: 350px;
+	
+	
     right: 0;
 }
 
-
-
-#slide {
-    position: absolute;
-    right: -50px;
-    width: 100px;
-    height: 100px;
-    background: blue;
-    transition: 1s;
+#slide1 {
+	position: fixed;
+	top: 350px;
 }
 
-.wrapper:hover #slide {
-    transition: 1s;
+#slide2 {
+	position: fixed;
+	top: 425px;
+}
+
+
+.slide {
+    position: absolute;
+    right: -150px;
+    width: 200px;
+    height: 75px;
+    background: blue;
+    transition: 0.5s;
+}
+
+.wrapper:hover .slide {
+    transition: 0.5s;
     right: 0;
 }
