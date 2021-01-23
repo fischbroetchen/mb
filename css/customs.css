@@ -28,9 +28,15 @@
 
 
 h1 {
+
 	color: #6A040F;
 	/*color: white;*/
 	font-weight: bold ;
+	text-shadow:  1px  1px 1px black,
+                  1px -1px 1px black,
+                 -1px  1px 1px black,
+                 -1px -1px 1px black;
+    margin-bottom: 0px;
 }
 
 #mainNav.navbar-shrink {
