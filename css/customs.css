@@ -45,7 +45,7 @@ h1 {
 .wrapper {
     position: relative;
     overflow: hidden;
-    width: 250px;
+    width: 300px;
     height: 60px;
     float: right;
     z-index: 9999 !important;
@@ -66,8 +66,8 @@ h1 {
 
 .slide {
     position: absolute;
-    right: -180px;
-    width: 250px;
+    right: -250px;
+    width: 300px;
     height: 60px;
     background: blue;
     transition: 0.5s;
@@ -76,4 +76,8 @@ h1 {
 .wrapper:hover .slide {
     transition: 0.5s;
     right: 0;
+}
+
+.slider-tel {
+	display: inline;
 }
