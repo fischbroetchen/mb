@@ -53,4 +53,20 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    var buttonHide = function () {
+        if ($("#mainNav").offset().top > 100) {
+            $("#up-button").removeClass("hide-button");
+        } else {
+            $("#up-button").addClass("hide-button");
+        }
+    };
+    // Collapse now if page is not at top
+    buttonHide();
+    // Collapse the navbar when page is scrolled
+    $(window).scroll(buttonHide);
+
 })(jQuery); // End of use strict
+
+
+
