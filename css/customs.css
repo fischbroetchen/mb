@@ -5,12 +5,9 @@
 	background-color: #6A040F !important;
 }
 
-.primary-footer-color {
-	background-color: #9E111F !important;
-}
 
 .secondary-bg-color {
-	background-color: #B80719 ! important;
+	background-color: #9E111F ! important;
 }
 
 .primary-text-color {
@@ -21,15 +18,9 @@
 	color: #fed136;
 }
 
-#logo-mb {
-	
-	
-}
-
 .shadow {
 	text-shadow: 0 0 5px black;
 }
-
 
 h1 {
 
@@ -42,6 +33,19 @@ h1 {
                  -1px -1px 1px #FFF5D0;
     */margin-bottom: 0px;
 }
+
+#mainNav .navbar-toggler {
+	background-color: transparent;
+	height: 50px;
+	width: 50px;
+}
+
+#menu-icon {
+	width: 20px;
+	height: auto;
+	color: #6A040F;
+}
+
 
 #mainNav.navbar-shrink {
 	background-color: white;
