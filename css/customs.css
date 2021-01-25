@@ -60,15 +60,7 @@ h1 {
 
 /* --- Contact Slider --- */
 
-/*.wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 300px;
-    height: 60px;
-    float: right;
-    z-index: 9999 !important;
-    right: 0;
-}*/
+
 
 #slide1 {
 	position: fixed;
@@ -102,13 +94,20 @@ h1 {
 
 /* --- Scroll Up Button --- */
 
-.scroll-up-button {
+#up-button {
 	position: fixed;
-	right: 34;
-	bottom: 34;
-	background-color:  #6A040F !important;
+	right: 50px;
+	bottom: 50px;
+	/*background-color:  #6A040F !important;*/
+	z-index: 999;
+	color:   #6A040F !important;
+	
 }
 
+#up-icon {
+	width: 50px;
+	height: auto;
+}
 
 
 @media (max-width: 768px) {
