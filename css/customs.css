@@ -48,7 +48,6 @@ h1 {
 /* --- menu --- */
 
 
-
 #menu-icon {
 	width: 20px;
 	height: auto;
@@ -81,8 +80,6 @@ div > ul > li {
 }
 
 /* --- Contact Slider --- */
-
-
 
 #slide1 {
 	position: fixed;
@@ -162,7 +159,15 @@ div > ul > li {
 	outline: none !important;
 }
 
+a:hover , a:active {
+	color: white;
+}
 
+
+a.text-primary:hover, a.text-primary:focus {
+    color: white !important;
+    text-shadow: 0 0 2px black;
+}
 
 /* ----------- media queries ------------*/
 
@@ -182,7 +187,7 @@ div > ul > li {
 	}
 
 	.slide:hover  {
-    display: none;
+    right: -260px;
 	}
 
 	.slide {
@@ -212,11 +217,6 @@ div > ul > li {
  }
 
 
-
-
-
-
-
 @media (min-width: 576px) and (max-width: 767.98px) { ... }
 
 
@@ -227,7 +227,5 @@ div > ul > li {
 
 
 @media (min-width: 1200px) { ... }
-
-
 
 
