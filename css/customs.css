@@ -46,6 +46,11 @@ h1 {
 	color: #6A040F;
 }
 
+#menu-icon:active {
+	border-color: transparent;
+	border: 0;
+}
+
 
 #mainNav.navbar-shrink {
 	background-color: white;
@@ -60,6 +65,10 @@ h1 {
 #mainNav {
 	background-color: rgb(255, 255, 255, 0.7);
 	transition: 0.5s;
+}
+
+div > ul > li {
+	/*border-top:  1px dashed #6A040F;*/
 }
 
 /* --- Contact Slider --- */
@@ -85,6 +94,7 @@ h1 {
     height: 60px;
     transition: 0.5s;
     z-index: 9999;
+    color: white;
 }
 
 .slide:hover  {
