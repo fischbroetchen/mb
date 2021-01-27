@@ -10113,7 +10113,7 @@ header.masthead {
   background-image: url("../assets/img/header.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: 90%;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
