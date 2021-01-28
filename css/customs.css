@@ -18,6 +18,8 @@
 	color: #fed136;
 }
 
+
+
 .shadow {
 	text-shadow: 0 0 5px black;
 }
@@ -65,9 +67,9 @@ h1 {
 	/*background-color: #6A040F !important;*/
 }
 
-}
+
 #mainNav .navbar-nav .nav-item .nav-link {
-	color:  #6A040F !important;
+	font-weight: bold !important;
 }
 
 #mainNav {
@@ -173,8 +175,8 @@ a:hover , a:active {
 
 
 a.text-primary:hover, a.text-primary:focus {
-    color: white !important;
-    text-shadow: 0 0 2px black;
+    color: #212529 !important;
+    /*text-shadow: 0 0 2px black;*/
 }
 
 
