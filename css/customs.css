@@ -152,8 +152,16 @@ div > ul > li {
 	transition: 0.5s;
 }
 
+
+
+
+
 /* -- global -- */
 
+h5 {
+	font-size: initial;
+	padding-top: 10px;
+}
 
 :focus {
 	outline: none !important;
@@ -168,6 +176,27 @@ a.text-primary:hover, a.text-primary:focus {
     color: white !important;
     text-shadow: 0 0 2px black;
 }
+
+
+.btn-link, .btn-link:hover  {
+	color: inherit;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+button > h4 {
+	font-size: 1.0rem;
+	margin-bottom: 0;
+}
+
+button > h4 > svg {
+	margin-right: 20px;
+}
+
+/*------ FAQ sectio*/
+
 
 /* ----------- media queries ------------*/
 
