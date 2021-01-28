@@ -105,7 +105,7 @@ div > ul > li {
     color: white;
 }
 
-.slide:hover  {
+.slide:focus  {
     transition: 0.5s;
     right: 0;
 }
@@ -173,6 +173,9 @@ a:hover , a:active {
 	color: white;
 }
 
+.modal-body  a {
+	color: inherit;
+}
 
 a.text-primary:hover, a.text-primary:focus {
     color: #212529 !important;
