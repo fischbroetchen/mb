@@ -105,7 +105,7 @@ div > ul > li {
     color: white;
 }
 
-.slide:focus  {
+.slide:hover  {
     transition: 0.5s;
     right: 0;
 }
@@ -169,9 +169,9 @@ h5 {
 	outline: none !important;
 }
 
-a:hover , a:active {
+/*a:hover , a:active {
 	color: white;
-}
+}*/
 
 .modal-body  a {
 	color: inherit;
@@ -201,7 +201,7 @@ a.text-primary:hover, a.text-primary:focus {
 	box-shadow: none;
 }
 
-.btn {
+#faq .btn {
 	line-height: 1;
 	padding-left: 0;
 }
@@ -226,6 +226,23 @@ button > svg {
 	padding-left: 3rem;
 	padding-right: 3rem;
 }
+
+#faq ul {
+	padding-left: 15px;
+}
+
+/*-------contact section----------*/
+#team h4 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#team p {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
 
 /* ----------- media queries ------------*/
 
