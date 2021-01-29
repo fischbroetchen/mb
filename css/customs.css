@@ -182,6 +182,16 @@ a.text-primary:hover, a.text-primary:focus {
     /*text-shadow: 0 0 2px black;*/
 }
 
+.unselectable {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+
+/*------ FAQ section----------*/
 
 .btn-link, .btn-link:hover  {
 	color: inherit;
@@ -193,24 +203,29 @@ a.text-primary:hover, a.text-primary:focus {
 
 .btn {
 	line-height: 1;
-	/*display: table-cell !important;*/
+	padding-left: 0;
 }
 
-h4 > button {
-	font-size: 1.0rem;
-	margin-bottom: 0 !important;
+button span {
+	display: block;
+	font-weight: bold;
 	overflow: hidden;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 button > svg {
-	margin-right: 20px;
+	margin-right: 1.25rem;
+	float: left;
 	/*vertical-align: middle;*/
 }
 
-/*------ FAQ sectio*/
+#faq h4 {
+	margin-bottom: 0 !important;
+}
 
+.card-body {
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
 
 /* ----------- media queries ------------*/
 
