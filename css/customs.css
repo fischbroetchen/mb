@@ -246,10 +246,31 @@ button > svg {
 
 /* ----------- media queries ------------*/
 
+@media (max-width: 991.98px) {
+	#team h4 {
+		text-align: center;
+	}
+
+	#team p {
+		text-align: center;
+	}
+
+}
+
 @media (max-width: 768px) {
 	h1 {
 		font-size: 2rem;
 	}
+	#team h4 {
+		font-size: 1em;
+		font-weight: bold;
+	}	
+
+	#team p {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
 }
 
 
