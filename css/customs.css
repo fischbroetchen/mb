@@ -20,7 +20,7 @@
 
 
 
-.shadow {
+.text-shadow {
 	text-shadow: 0 0 5px black;
 }
 
@@ -140,12 +140,14 @@ div > ul > li {
 	/*background-color:  #6A040F !important;*/
 	z-index: 999;
 	color:   #6A040F !important;
+	/*background-color: white; 
+	border-radius: 50%;*/
 
 }
 
 #up-icon {
 	width: 50px;
-	height: auto;
+	height: 50px;
 
 }
 
@@ -270,26 +272,31 @@ button > svg {
 		font-size: 1.2em;
 		font-weight: bold;
 	}
+	#team .open-times {
+		font-size: 1em;
+	}
+
 
 }
 
 
 @media (max-width: 575.98px) { 
 	h1 {
-		font-size: 0.9em;
+		font-size: 1em;
 	}
 	#mainNav .navbar-brand img {
   		height: 3.5rem;
 	}
 
 	.slide:hover  {
-    right: -260px;
+    	right: -260px;
 	}
 
 	.slide {
-    height: 40px;
-    right: -260px;
+    	height: 40px;
+    	right: -260px;
     }
+
     #slide1 {
     	top: 240px;
     	border-top-left-radius: 20px;
@@ -319,7 +326,12 @@ button > svg {
 @media (min-width: 768px) and (max-width: 991.98px) { ... }
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 2.3rem;
+	}
+
+}
 
 
 @media (min-width: 1200px) { ... }
