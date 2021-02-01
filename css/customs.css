@@ -212,11 +212,15 @@ button span {
 	display: block;
 	font-weight: bold;
 	overflow: hidden;
+	padding-top: 3px;
+	padding-bottom:3px;
 }
 
 button > svg {
 	margin-right: 1.25rem;
 	float: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	/*vertical-align: middle;*/
 }
 
@@ -298,11 +302,11 @@ button > svg {
     }
 
     #slide1 {
-    	top: 240px;
+    	top: 280px;
     	border-top-left-radius: 20px;
     }
     #slide2 {
-    	top: 280px;
+    	top: 320px;
     	border-bottom-left-radius: 20px;
     }
     #slider-tel {
