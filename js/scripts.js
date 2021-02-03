@@ -65,6 +65,9 @@
     buttonHide();
     // Collapse the navbar when page is scrolled
     $(window).scroll(buttonHide);
+   
+
+
 
 })(jQuery); // End of use strict
 
