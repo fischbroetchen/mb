@@ -66,15 +66,10 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(buttonHide);
    
-    var focusMethod = function getFocus() {
-    $("#slide1").focus();
-
-    $(".btn").focus(function (e) {
-    $(".result").append("<p>Event:"+e.type+", target:"+e.target+"</p>");
-})
-
-}
-
+    var function sliderToggle() {
+        var element = document.getElementById("slide1");
+        element.classList.toggle("slider-toggle");
+    }
 
 
 })(jQuery); // End of use strict

@@ -103,12 +103,15 @@ h1 {
     color: white;
 }
 
-.slide:focus-within, .slide:focus, .slide:active {
+/*.slide:focus-within, .slide:focus, .slide:active {
     transition: 0.5s !important;
     right: 0 !important;
+}*/
+
+.slider-toggle{
+	transition: 0.5s !important;
+	right: 0 !important;
 }
-
-
 
 /*.slide > p > i {
 	width: 50px;
