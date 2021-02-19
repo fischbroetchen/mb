@@ -103,7 +103,7 @@ h1 {
     color: white;
 }
 
-.slide:focus  {
+.slide:focus-within, .slide:focus, .slide:active {
     transition: 0.5s;
     right: 0;
 }
