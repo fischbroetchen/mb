@@ -66,11 +66,7 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(buttonHide);
    
-    var function sliderToggle() {
-        var element = document.getElementById("slide1");
-        element.classList.toggle("slider-toggle");
-    }
-
+    
 
 })(jQuery); // End of use strict
 
