@@ -104,8 +104,8 @@ h1 {
 }
 
 .slide:focus-within, .slide:focus, .slide:active {
-    transition: 0.5s;
-    right: 0;
+    transition: 0.5s !important;
+    right: 0 !important;
 }
 
 
