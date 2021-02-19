@@ -1,0 +1,1 @@
+<?php $failcounter=0; $failtime=0; $totalfails=0; ?>

@@ -77,9 +77,7 @@ h1 {
 	transition: 0.5s;
 }
 
-div > ul > li {
-	/*border-top:  1px dashed #6A040F;*/
-}
+
 
 /* --- Contact Slider --- */
 
@@ -169,11 +167,7 @@ div > ul > li {
 	height: 30px;
 	
 }
-#wind-icon {
-	margin-left: 17px;
-	width: 14px;
 
-}
 
 #up-button:focus {
 	transform: rotate(360deg);
@@ -186,6 +180,29 @@ div > ul > li {
 
 
 
+/*--------down button-------*/
+
+#down-button {
+	position: absolute;
+	display: inline-block;
+	background-color: #6A040F;
+	border-radius: 50%;
+	/*border-width: -1px;*/
+	/*color: #6A040F;*/
+	height: 50px;
+	width: 50px;
+	/*margin-right: 50%;*/
+/*margin-left: 50%;*/
+	/*margin-top: 100px;*/
+	vertical-align: center;
+}
+
+svg#down-icon {
+	/*margin-left:*/
+	margin-top: 10px;
+	width: 20px;
+	height: 30px;
+}
 
 
 /* -- global -- */
@@ -218,6 +235,7 @@ a.text-primary:hover, a.text-primary:focus {
       -ms-user-select: none;
           user-select: none;
 }
+
 
 
 
@@ -265,6 +283,11 @@ button > svg {
 	padding-left: 15px;
 }
 
+#faq ul > li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 /*-------contact section----------*/
 #team h4 {
 	font-size: 1em;
@@ -295,7 +318,9 @@ button > svg {
 	#team p {
 		text-align: center;
 	}
-
+	.navbar div > ul > li {
+	border-bottom:  1px dashed #6A040F;
+	}
 }
 
 @media (max-width: 768px) {
@@ -314,7 +339,10 @@ button > svg {
 	#team .open-times {
 		font-size: 1em;
 	}
-
+	/*-------Leistungen section -----*/
+#services h4{
+	font-size: 22px;
+}
 
 }
 

@@ -7342,7 +7342,7 @@ button.bg-dark:focus {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 498;
 }
 
 .fixed-bottom {
@@ -9998,12 +9998,12 @@ p {
   }
 }
 ::-moz-selection {
-  background: #fed136;
+  /*background: #fed136;*/
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  /*background: #fed136;*/
   text-shadow: none;
 }
 
