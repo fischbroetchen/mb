@@ -47,20 +47,7 @@
           <div class="contact-slider">
             <button id="slide2" class="slide secondary-bg-color " tabindex="2" onclick="sliderToggle2()"><p class="slider-mail"><i class="fas fa-envelope float-left" id="slider-mail"></i><a href="mailto:info@diemoebelbewegung.de" target="_blank"> info@diemoebelbewegung.de</a></p></button>
         </div>
-        <script type="text/javascript">
-            function sliderToggle1() {
-            var element = document.getElementById("slide1");
-            var element2 = document.getElementById("slide2");
-            element.classList.toggle("slider-toggle");
-            element2.classList.remove("slider-toggle");
-            }
-            function sliderToggle2() {
-            var element = document.getElementById("slide2");
-            var element2 = document.getElementById("slide1");
-            element.classList.toggle("slider-toggle");
-            element2.classList.remove("slider-toggle");
-            }
-        </script>
+       
         <!-- Scroll up Button -->
         
             <a class="js-scroll-trigger smart-scroll" id="up-button" href="#page-top"><!-- <i class="fas fa-truck fa-inverse fa-rotate-270 " id=up-icon></i><i class="fas fa-wind fa-inverse fa-rotate-90" id=wind-icon></i> --><i class="fas fa-chevron-up fa-inverse" id="up-icon"></i></a>
@@ -262,18 +249,39 @@
                   </div>
                 </div>
               </div>
-
+              <div class="card">
+                <div class="card-header" id="orga-faq">
+                  <h4>
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOraga-faq" aria-expanded="false" aria-controls="collapseOraga-faq"><i class="fas fa-chevron-down float-left"></i>
+                      <span class="editable_line">Was gilt es bei der Planung zu berücksichtigen?</span>
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseOraga-faq" class="collapse" aria-labelledby="orga-faq" data-parent="#fa-accordeon">
+                  <div class="card-body editable">
+                    <h5> Damit am Umzugstag alles reibungslos verläuft, haben wir Ihnen eine kleine Checkliste zusammengestellt:</h5>
+                    
+                        <ul>
+                            <li><b>Parkplatz.</b> Für unseren LKW sollte möglichst ein Parkplatz freigehalten werden. Alternativ können wir uns auch um eine Halteverbotszone kümmern, die drei Tage vorher eingerichtet wird.</li>
+                            <li><b>Durchgänge.</b> Bitte sorgen Sie dafür, dass die Durchgänge frei sind, sodass unsere Mitarbeiter freie Bahn haben. </li>
+                            <li><b>Keller.</b> Erfahrungen haben gezeigt, dass dieser Bereich oft vergessen wird. Damit am Umzugstag keine unnötigen Wege gegangen werden, achten Sie bitte darauf Kartons, die für den Keller bestimmt sind, als solche zu beschriften.</li>
+                            <li><b>Gefälligkeitsarbeiten.</b> Für Gefälligkeitsarbeiten, wie den Anschluss einer Waschmaschine, können wir <u>keine Haftung</u> übernehmen. Bitte informieren Sie in diesem Fall auch Ihre Nachbarn.</li>
+                        </ul>
+                    
+                  </div>
+                </div>
+              </div>
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h4>
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fas fa-chevron-down float-left"></i>
-                      <span class="editable_line">Gibt es bei der Vorbeitung etwas zu beachten?</span>
+                      <span class="editable_line">Gibt es beim Packen der Umzugskartons etwas zu beachten?</span>
                     </button>
                   </h4>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#fa-accordeon">
                   <div class="card-body editable">
-                    <h5>Ja! Damit am Umzugstag alles reibungslos verläuft, haben wir Ihnen eine kleine Checkliste zusammengestellt:</h5>
+                    <h5>Ja! Damit jeder Karton weiß wo er hingehört und um die Gesundheit unserer Mitarbeter zu gewährleisten, beachten Sie bitte folgende Hinweise:</h5>
                     
                         <ul>
                             <li>Umzugskartons k&ouml;nnen bis zu einem max. Gewicht von 20 kg gepackt werden.</li>
@@ -301,9 +309,10 @@
                         <ul>
                             <li><b>Umzugskartons.</b> (L x B x H): 61 x 30 x 32cm, bis max 20kg bepacken!  </li>
                             <li><b>Bücherkartons.</b> (L x B x H): 40 x 33 x 33cm, bis max 20kg bepacken!</li> 
-                            <li><b>Kleiderboxen.</b> (L x B x H):  62 x 52 x 135cm; Werden am Umzugstag mitgebracht.</li>
+                            <li><b>Kleiderboxen.</b> (L x B x H):  62 x 52 x 135cm; Werden am Umzugstag mitgebracht</li>
                             <li><b>Luftpolsterfolie.</b> Für empfindliche Transportgüter jeder Art</li>
                             <li><b>Seidenpapier.</b> Für Geschirr und andere zerbrechliche Gegenstände</li>
+                            <li><b>Matrazenhüllen.</b> Um Matrazen vor Verunreinigungen zu schützen</li>
                         </ul>
                     
                   </div>
@@ -332,6 +341,28 @@
                     </ul>
 
                    
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive-a">
+                  <h4>
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive-a" aria-expanded="false" aria-controls="collapseFive-a"><i class="fas fa-chevron-down float-left"></i>
+                     <span class="editable_line"> Was sollte beachtete werden damit keine unnötigen Schäden entstehen?</span>
+                    </button>
+                 </h4>
+                </div>
+                <div id="collapseFive-a" class="collapse" aria-labelledby="headingFive-a" data-parent="#fa-accordeon">
+                  <div class="card-body editable">
+                   <h5>Schutz vor Schäden</h5>
+                   <p>Damit während des Umzugs nichts schief geht, sollten im Vorfeld einige Schutzmaßnahmen getroffen werden:</p>
+                   <ul>
+                       <li><b>Zerbrechliche Gegenstände.</b> Zerbrechliche Gegenstände, wie Bilder oder Dekoartikel, bitte gesondert hinstellen. Bilderrahmen, Pflanzen und Schuhschränke, die im Treppenhaus stehen, bitte wegstellen.</li>
+                       <li><b>Matrazen</b> Um die Matrazen vor Verunreinigungen zu schützen ist es sinnvoll diese mit Bettbezügen
+                        zu beziehen. Diese können nach dem Umzug leichter gereinigt werden. Matrazenhüllen können auch bei uns bestellt werden.</li>
+                        <li><b>Böden.</b> Um neuverlegte oder empfindliche Böden vor Schmutz und Schäden zu schützen sollten
+                        diese mit Malerflies oder Pappe ausgelegt werden.</li>
+                   </ul>
                   </div>
                 </div>
               </div>
