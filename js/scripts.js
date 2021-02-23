@@ -66,7 +66,27 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(buttonHide);
    
+//     hide = true;
+//     $('body').on("click", function () {
+//     if (hide) $('.dropdown').removeClass('active');
+//     hide = true;
+//     });
 
+// // add and remove .active
+//     $('body').on('click', '.dropdown', function () {
+
+//     var self = $(this);
+
+//     if (self.hasClass('active')) {
+//         $('.dropdown').removeClass('active');
+//         return false;
+//     }
+
+//     $('.dropdown').removeClass('active');
+
+//     self.toggleClass('active');
+//     hide = false;
+// });
    
 
 })(jQuery); // End of use strict
