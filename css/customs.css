@@ -181,12 +181,26 @@ h1 {
 	display: none;
 }
 
-
+/*-----corona line-------*/
+#corona-button {
+	/*position: absolute;*/
+	display: inline-block;
+	background-color: #6A040F;
+	
+	/*border-width: -1px;*/
+	/*color: #6A040F;*/
+	height: 50px;
+	width: 200px;
+	/*margin-right: 50%;*/
+/*margin-left: 50%;*/
+	/*margin-top: 100px;*/
+	vertical-align: center;
+}
 
 /*--------down button-------*/
 
 #down-button {
-	position: absolute;
+	/*position: absolute;*/
 	display: inline-block;
 	background-color: #6A040F;
 	border-radius: 50%;
