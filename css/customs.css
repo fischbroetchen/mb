@@ -276,7 +276,7 @@ a.text-primary:hover, a.text-primary:focus {
 	padding-left: 0;
 }
 
-button span {
+a span {
 	display: block;
 	font-weight: bold;
 	overflow: hidden;
@@ -284,7 +284,7 @@ button span {
 	padding-bottom:3px;
 }
 
-button > svg {
+#faq a > svg {
 	margin-right: 1.25rem;
 	float: left;
 	margin-top: 3px;
