@@ -39,7 +39,10 @@ h1 {
     */margin-bottom: 0px;
 }
 
-
+#logo-mb{
+	height: 100px;
+	width: 100px;
+}
 
 #mainNav .navbar-toggler {
 	background-color: transparent;
