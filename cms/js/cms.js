@@ -10,7 +10,7 @@ www.coast-cms.de
 function notify(content, duration){
 if (!duration) {duration = 10000;}
 
-$('.cms_notifications').prepend('<div class="cms_notification">'+content+'<div class="cms_button_hide_notification"><i class="fa fa-times"></i></div></div>').children().first().slideDown(300).wait(duration).slideUp(300);
+$('.cms_notifications').prepend('<div class="cms_notification">'+content+'<div class="cms_button_hide_notification"><i class="fas fa-times"></i></div></div>').children().first().slideDown(300).wait(duration).slideUp(300);
 
 $('.cms_button_hide_notification').click(function () { $(this).parent().slideUp(100);  });
 }
@@ -43,7 +43,7 @@ clearInterval(countdowntimer);
 location.reload(true);
 } else {
 if (timeout == 90) {  
-notify('<i class="fa fa-exclamation-triangle"></i> '+warning_logout,90000);
+notify('<i class="fas fa-exclamation-triangle"></i> '+warning_logout,90000);
 }
 if (timeout <= 90) {  $('#cms_countdown').html(timeout); }
 timeout--;
@@ -161,8 +161,8 @@ var currenthref = $(this).parent().attr('href');
 
 $(this).parent().next().next('input').after('<div class="cms_imagelink_input_bar">'+
 '<input type="text" class="cms_imagelink_input" value="'+currenthref+'">'+
-'<div class="cms_imagelink_button cms_imagelink_button_ok"><i class="fa fa-check"></i></div>'+
-'<div class="cms_imagelink_button cms_imagelink_button_cancel"><i class="fa fa-times"></i></div>'+
+'<div class="cms_imagelink_button cms_imagelink_button_ok"><i class="fas fa-check"></i></div>'+
+'<div class="cms_imagelink_button cms_imagelink_button_cancel"><i class="fas fa-times"></i></div>'+
 '<div class="clearer"></div>'+
 '</div>');
 
@@ -633,7 +633,7 @@ var currentbuttonposition = $(this).attr('data-cs-pos');
 // TOP -------------------------
 if (currentbuttonposition == 'top') {
 
-$(this).before('<div class="cms_button_add_content_section"><i class="fa fa-plus-square"></i> '+currentbuttontitle+'</div>');
+$(this).before('<div class="cms_button_add_content_section"><i class="far fa-plus-square"></i> '+currentbuttontitle+'</div>');
 
 //$('.cms_button_add_content_section').click(function(){ // debugged
 $(this).prev().click(function(){	
@@ -662,7 +662,7 @@ error: function () { notify(error_contentsection, 10000); $('.cms_button_add_con
 // BOTTOM -------------------------
 } else if (currentbuttonposition == 'bottom') {
 
-$(this).after('<div class="cms_button_add_content_section"><i class="fa fa-plus-square"></i> '+currentbuttontitle+'</div>');
+$(this).after('<div class="cms_button_add_content_section"><i class="far fa-plus-square"></i> '+currentbuttontitle+'</div>');
 
 //$('.cms_button_add_content_section').click(function(){ // debugged
 $(this).next().click(function(){	
@@ -691,7 +691,7 @@ error: function () { notify(error_contentsection, 10000); $('.cms_button_add_con
 // DRAGGABLE -------------------------
 } else if (currentbuttonposition == 'draggable') {
 
-$(this).before('<div class="cms_button_add_content_section"><i class="fa fa-plus-square"></i> '+currentbuttontitle+'</div>');
+$(this).before('<div class="cms_button_add_content_section"><i class="far fa-plus-square"></i> '+currentbuttontitle+'</div>');
 
 //$('.cms_button_add_content_section').click(function(){ // debugged
 $(this).prev().click(function(){	
@@ -733,8 +733,8 @@ error: function () { notify(error_contentsection, 10000); $('.cms_button_add_con
 // EACH -------------------------
 } else {
 
-$(this).find('.content_section_item').before('<div class="cms_button_add_content_section"><i class="fa fa-plus-square"></i> '+currentbuttontitle+'</div>');
-$(this).append('<div class="cms_button_add_content_section"><i class="fa fa-plus-square"></i> '+currentbuttontitle+'</div>');
+$(this).find('.content_section_item').before('<div class="cms_button_add_content_section"><i class="far fa-plus-square"></i> '+currentbuttontitle+'</div>');
+$(this).append('<div class="cms_button_add_content_section"><i class="far fa-plus-square"></i> '+currentbuttontitle+'</div>');
 
 $('.cms_button_add_content_section').click(function(){
 
@@ -817,10 +817,10 @@ $('.content_section_item').each(function(index){
 
 $(this).append(''+
 '<div class="cms_content_section_single_overlay">'+
-'<i class="edit fa fa-pencil-square-o"></i>'+
-'<i class="delete fas fa-trash"></i>'+
-'<i class="ok fa fa-check"></i>'+
-'<i class="cancel fa fa-times"></i>'+
+'<a class="edit"><i class="edit fas fa-edit"></i></a>'+
+'<a class="delete"><i class="delete fas fa-trash"></i></a>'+
+'<a class="ok"><i class="ok fas fa-check"></i></a>'+
+'<a class="cancel"><i class="cancel fas fa-times"></i></a>'+
 '</div>');
 
 overlaywidth=$(this).outerWidth()+10;
@@ -1019,7 +1019,7 @@ $('.cms_button').hide();
 var currentfile = document.URL.split('currentfile=')[1];
 var currentfilename = currentfile.split('.html')[0];
 
-$('.cms_notifications').html('<div class="cms_prompt">'+new_filename+' <span id="targetfilename" contenteditable="true" style="font-weight:bold; border-bottom:1px dotted #666;">'+currentfilename+'</span>.html <span class="cms_prompt_error"></span><div class="cms_buttons"><div class="cms_button" id="duplicate_ok"><i class="fa fa-check"></i></div><div class="cms_button" id="duplicate_cancel"><i class="fa fa-times"></i></div></div></div>').children().first().slideDown(300);
+$('.cms_notifications').html('<div class="cms_prompt">'+new_filename+' <span id="targetfilename" contenteditable="true" style="font-weight:bold; border-bottom:1px dotted #666;">'+currentfilename+'</span>.html <span class="cms_prompt_error"></span><div class="cms_buttons"><div class="cms_button" id="duplicate_ok"><i class="fas fa-check"></i></div><div class="cms_button" id="duplicate_cancel"><i class="fas fa-times"></i></div></div></div>').children().first().slideDown(300);
 $('#targetfilename').focus();
 
 
@@ -1095,7 +1095,7 @@ $('.cms_button').hide();
 
 var currentfile = document.URL.split('currentfile=')[1];
 
-$('.cms_notifications').html('<div class="cms_prompt"><span class="cms_prompt_red"><i class="fa fa-exclamation-triangle"></i> '+really_delete+'</span><div class="cms_buttons"><div class="cms_button" id="delete_ok"><i class="fa fa-check"></i></div><div class="cms_button" id="delete_cancel"><i class="fa fa-times"></i></div></div></div>').children().first().slideDown(300);
+$('.cms_notifications').html('<div class="cms_prompt"><span class="cms_prompt_red"><i class="fas fa-exclamation-triangle"></i> '+really_delete+'</span><div class="cms_buttons"><div class="cms_button" id="delete_ok"><i class="fas fa-check"></i></div><div class="cms_button" id="delete_cancel"><i class="fas fa-times"></i></div></div></div>').children().first().slideDown(300);
 
 $('#delete_cancel').click(function () { 
 $(this).parent().parent().slideUp(300).wait(300).remove(); 
@@ -1176,7 +1176,7 @@ $.post("cms/php/deletefile.php", { currentfile: currentfiledelete })
 
 function showuploads(){
 $('.cms_button').hide(); 
-$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_cancelupload" data-toggle="tooltip" title="abbrechen"><i class="fa fa-times"></i></div>');
+$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_cancelupload" data-toggle="tooltip" title="abbrechen"><i class="fas fa-times"></i></div>');
 $('#cms_button_cancelupload').click(function () { 
 $(this).hide();
 $('.cms_uploads_overlay').remove();
@@ -1407,7 +1407,7 @@ $('#cms_button_editmenu').click(function (e) { editmenu(); });
 
 function showbackups(){
 $('.cms_button').hide(); 
-$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_cancelrestorebackup" data-toggle="tooltip" title="abbrechen"><i class="fa fa-times"></i></div>');
+$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_cancelrestorebackup" data-toggle="tooltip" title="abbrechen"><i class="fas fa-times"></i></div>');
 $('#cms_button_cancelrestorebackup').click(function () { 
 $(this).hide();
 $('.cms_backups_overlay').remove();
@@ -1435,7 +1435,7 @@ function restorebackup(){
 
 $('.cms_button').hide();
 
-$('.cms_notifications').html('<div class="cms_prompt">Soll diese Version der Seite wiederhergestellt werden?<div class="cms_buttons"><div class="cms_button" id="restorebackup_ok"><i class="fa fa-check"></i></div><div class="cms_button" id="restorebackup_cancel"><i class="fa fa-times"></i></div></div></div>').children().first().slideDown(300);
+$('.cms_notifications').html('<div class="cms_prompt">Soll diese Version der Seite wiederhergestellt werden?<div class="cms_buttons"><div class="cms_button" id="restorebackup_ok"><i class="fas fa-check"></i></div><div class="cms_button" id="restorebackup_cancel"><i class="fas fa-times"></i></div></div></div>').children().first().slideDown(300);
 
 $('#restorebackup_cancel').click(function(){
 $('.cms_prompt').slideUp(200);
@@ -1503,7 +1503,7 @@ $('.cms_textarea').fadeIn(300, function(){$('html').css('margin-top','0');});
 
 $('.cms_button').hide(); 
 
-$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_savehtml" data-toggle="tooltip" title="speichern"><i class="fa fa-check"></i></div><div class="cms_button" id="cms_button_canceledithtml" data-toggle="tooltip" title="abbrechen"><i class="fa fa-times"></i></div>');
+$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_savehtml" data-toggle="tooltip" title="speichern"><i class="fas fa-check"></i></div><div class="cms_button" id="cms_button_canceledithtml" data-toggle="tooltip" title="abbrechen"><i class="fas fa-times"></i></div>');
 
 $('#cms_button_canceledithtml').click(function () { 
 $('.cms_button').hide(); 
@@ -1588,7 +1588,7 @@ $('.cms_textarea').fadeIn(300, function(){$('html').css('margin-top','0');});
 
 $('.cms_button').hide(); 
 
-$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_savecss" data-toggle="tooltip" title="speichern"><i class="fa fa-check"></i></div><div class="cms_button" id="cms_button_canceleditcss" data-toggle="tooltip" title="abbrechen"><i class="fa fa-times"></i></div>');
+$('.cms_buttons').prepend('<div class="cms_button" id="cms_button_savecss" data-toggle="tooltip" title="speichern"><i class="fas fa-check"></i></div><div class="cms_button" id="cms_button_canceleditcss" data-toggle="tooltip" title="abbrechen"><i class="fas fa-times"></i></div>');
 
 $('#cms_button_canceleditcss').click(function () { 
 $('.cms_button').hide(); 

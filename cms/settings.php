@@ -1,7 +1,7 @@
 <?php
 
-$username = 'fisch'; // not: admin
-$userpassword = 'brot'; // not: topsecret
+$username = 'MB'; // not: admin
+$userpassword = '3102'; // not: topsecret
 
 $maintenancemode = 'off'; // on/off
 

@@ -103,34 +103,27 @@ h1 {
     color: white;
 }
 
-/*.slide:focus-within, .slide:focus, .slide:active {
-    transition: 0.5s !important;
-    right: 0 !important;
-}*/
+
 
 .slider-toggle{
 	transition: 0.5s !important;
 	right: 0 !important;
 }
 
-/*.slide > p > i {
-	width: 50px;
-}*/
+
 
 #slider-tel {
 	width: 25px;
 	height: auto;
 	margin-left: 7px;
-	/*padding-top: 5px;*/
-	/*margin-right: 40px;*/
+
 }
 
 #slider-mail {
 	width: 25px;
 	height: auto;
 	margin-left: 6px;
-	/*padding-top: 5px;*/
-	/*margin-right: 15px;*/
+
 }
 .contact-slider button {
 	border: 0;
@@ -159,10 +152,10 @@ h1 {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	/*-webkit-box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.6); 
-	box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.6);*/
-	transition: 0.5s
+
+	transition: 0.5s;
 }
+
 #up-icon {
 	margin-left:15px;
 	margin-top: 7px;
@@ -183,34 +176,24 @@ h1 {
 
 /*-----corona line-------*/
 #corona-button {
-	/*position: absolute;*/
+
 	display: inline-block;
 	background-color: #6A040F;
 	
-	/*border-width: -1px;*/
-	/*color: #6A040F;*/
 	height: 50px;
 	width: 200px;
-	/*margin-right: 50%;*/
-/*margin-left: 50%;*/
-	/*margin-top: 100px;*/
+
 	vertical-align: center;
 }
 
 /*--------down button-------*/
 
 #down-button {
-	/*position: absolute;*/
 	display: inline-block;
 	background-color: #6A040F;
 	border-radius: 50%;
-	/*border-width: -1px;*/
-	/*color: #6A040F;*/
 	height: 50px;
 	width: 50px;
-	/*margin-right: 50%;*/
-/*margin-left: 50%;*/
-	/*margin-top: 100px;*/
 	vertical-align: center;
 }
 
@@ -398,8 +381,9 @@ a span {
     #slider-tel {
     	/*padding-top: 10px;*/
     	width: 18px;
-    	margin-left: 4px;
+    	margin: 0 0 0 4px;
 
+    	padding: 0;
     }
     #slider-mail {
     	/*padding-top: 10px;*/

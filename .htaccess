@@ -1,0 +1,11 @@
+RewriteEngine on
+
+# Required for the canonical redirect, if the trailing slash is omitted.
+RewriteBase /
+
+# Redirect any "direct" requests for the /m subdirectory back to the root
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,7}\s/m(/|$)
+RewriteRule ^m(/.*|$) $1 [R=301,L]
+
+# Rewrite all requests to the /m subdirectory (if not already)
+RewriteRule !^m/ m%{REQUEST_URI} [L]

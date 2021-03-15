@@ -66,27 +66,18 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(buttonHide);
    
-//     hide = true;
-//     $('body').on("click", function () {
-//     if (hide) $('.dropdown').removeClass('active');
-//     hide = true;
-//     });
 
-// // add and remove .active
-//     $('body').on('click', '.dropdown', function () {
+    $(function () {
 
-//     var self = $(this);
-
-//     if (self.hasClass('active')) {
-//         $('.dropdown').removeClass('active');
-//         return false;
-//     }
-
-//     $('.dropdown').removeClass('active');
-
-//     self.toggleClass('active');
-//     hide = false;
-// });
+        $(document).on("click", function (e) {
+            if (e.target.id != "slide1" && !$(e.target).closest("#slide1").length) {
+                $("#slide1").removeClass("slider-toggle");
+            }
+            if (e.target.id != "slide2" && !$(e.target).closest("#slide2").length) {
+                $("#slide2").removeClass("slider-toggle");
+            }
+        });
+    });
    
 
 })(jQuery); // End of use strict
@@ -95,22 +86,13 @@
    
    function sliderToggle1() {
             var element = document.getElementById("slide1");
-            var element2 = document.getElementById("slide2");
             element.classList.toggle("slider-toggle");
-            element2.classList.remove("slider-toggle");
             }
             function sliderToggle2() {
             var element = document.getElementById("slide2");
-            var element2 = document.getElementById("slide1");
             element.classList.toggle("slider-toggle");
-            element2.classList.remove("slider-toggle");
             }
-            function sliderClose() {
-            var element = document.getElementById("slide2");
-            var element2 = document.getElementById("slide1");
-            element.classList.remove("slider-toggle");
-            element2.classList.remove("slider-toggle");
-            }
+            
 
 jQuery(function($){
   $('.card-header').each(function(){

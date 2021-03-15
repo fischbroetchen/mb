@@ -4,7 +4,7 @@ if(!file_exists('cms/lang/'.$lang.'.js')) { $lang = 'de'; }
 if(!$tinymcedivoptions) {$tinymcedivoptions = '';}
 if(!$tinymceinlineoptions) {$tinymceinlineoptions = '';}
 
-$header = '<link href="cms/css/font-awesome.min.css"rel="stylesheet" type="text/css">
+$header = '<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 <link href="cms/css/cms.css" rel="stylesheet">
 
 ';
